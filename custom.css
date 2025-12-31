@@ -1,0 +1,9 @@
+@media screen and (min-width: 960px) {
+  .wrapper {
+    width: 1332px !important;
+  }
+  
+  section: {
+    width: 800px !important;
+  }
+}
