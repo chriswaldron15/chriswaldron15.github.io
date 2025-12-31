@@ -6,11 +6,11 @@ layout: default
     <title>chriswaldron15.github.io</title>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="./src/main.js"></script>
-    <link rel="stylesheet" href="style.css"/>
 </head>
 <html lang="en-GB">
 <body>
     <h1>Chris Waldron - Lead Unity Developer</h1>
+    <a href="mailto:chriswaldron15@gmail.com">chriswaldron15@gmail.com</a>
     <p id="tagline"></p>    <!-- replaced in JS with dynamic date calculation -->
     <h2>Games industry experience</h2>
     <p>I have been employed in the games industry continuously since January 2021. I specialise in Unity, having used it in a hobbyist or professional manner since 2013.</p>
@@ -20,15 +20,30 @@ layout: default
         <li><b><a href="https://www.maze-theory.com/" target="_blank">Maze Theory</a></b> - January 2023 to present</li>
     </ul>
     <h2>Games Worked On</h2>
+
+    <!-- Thief VR -->
     <h3><a href="https://www.thiefvr.com/" target="_blank">Thief VR: Legacy of Shadow</a></h3>
-    <img class="screenshot"  src="https://www.thiefvr.com/wp-content/uploads/2025/05/THF_Announce_Screenshot_01-scaled.webp" alt="Thief VR screenshot"/>
+    <img class="screenshot" src="https://www.thiefvr.com/wp-content/uploads/2025/05/THF_Announce_Screenshot_01-scaled.webp" alt="Thief VR screenshot"/>
     <ul>
         <li><b>Role: </b>Lead developer</li>
         <li><b>Platforms: </b>Quest 2, Quest 3, Steam, PSVR2</li>
         <li><b>Where and when: </b>Maze Theory - Jul 23 - Dec 25 (2.5 years)</li>
-        <li><b>Key responsibilities: </b></li>
+        <li><b>Key responsibilities: </b>
+        <ul>
+            <li>Team makeup: 1 principal gameplay programmer, 1 mid level programmer, 1 junior programmer, 1 technical artist. Support later in the project from contractors when needed (max team size was 8).</li>
+            <li><b>Code lead representing the team</b>, representing and decision making in feature meetings.<b>Subject matter expert for all things code</b> often pushing back on scope creep and an advocate for maintaining performance and stability as much as possible.</li>
+            <li><b>Responsible for code quality.</b> Set up our branching strategy (Git) for multi-platform synchronous development and <b>oversaw pull request reviews on Github</b>. <b>Developed a post-release strategy for patching</b> to speed up patch frequency.</li>
+            <li><b>Built and architected a significant number of key features:</b> enemy AI, menu systems, pause handling, checkpoint and save/ load system for quick level reloading (as well as between session save/ load).</li>
+            <li><b>Maintained our CI pipeline in Github Actions.</b> Originally built by a contractor I ensure its continued usefulness, <b>adding automated upload support for Quest and Steam and general versatility, such as specifying speciic Unity versions.</b></li>
+            <li><b>Implemented large performance gains in the final weeks to ensure we could ship the game.</b> One of a few solutions was to place a number of triggers in "the sky" to get around slowdown from the physics system, saving nearly 6ms on PS5.</li>
+            <li><b>Became release manager for our three platforms,</b> a consequence of that role being made redundant elsewhere in the organisation. Handled build uploads and versioning (especially for PS5 after master release), and user management for beta builds.</li>
+            <li><b>Mentored and line managed three developers (one tech artist).</b> Alongside general day-to-day support I helped to build a career matrix to aid in career/ promotion conversations. Had some difficult conversations where some individual performances were lacking, but also saw great growth in two reports who certainly deserved promotions during their time on the project.</li>
+        </ul>
+        </li>
     </ul>
-    <h3>Peaky Blinders: The Kings Ransom | Infinite Inside</h3>
+
+    <!-- Peaky and Infinite -->
+    <h3><a href="https://www.maze-theory.com/our-games/peaky-blinders-the-kings-ransom" target="_blank">Peaky Blinders: The Kings Ransom</a> | <a href="https://www.maze-theory.com/our-games/infinite-inside" target="_blank">Infinite Inside</a></h3>
     <img class="screenshot" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1903670/ss_1de708d5120b74d07151a7de3034e961de29b0d9.1920x1080.jpg?t=1763131507" alt="Peaky Blinders screenshot"/>
     <ul>
         <li><b>Role: </b>Senior developer</li>
@@ -37,20 +52,64 @@ layout: default
         <li><b>Key responsibilities: </b>
         <ul>
             <li>Bug fixing and late-stage support for Peaky Blinders.</li>
-            <li>Re-wrote the pause and sit-stand system for Peaky Blinders as it reduced complexity and added robustness, closing off most bugs in this area.</li>
-            <li>Diagnosed and fixed issues with visual scripting, bringing more logic into C# to fix issues and provide robustness.</li>
-            <li>PS5 development support on Infinite Inside, chiefly implementing trophies and bug fixing.</li>
+            <li><b>Re-wrote the pause and sit-stand system for Peaky Blinders</b> as it reduced complexity and added robustness, closing off most bugs in this area.</li>
+            <li><b>Diagnosed and fixed issues with visual scripting</b>, bringing more logic into C# to fix issues and provide robustness.</li>
+            <li>PS5 development support on Infinite Inside, chiefly <b>implementing trophies and bug fixing</b>.</li>
         </ul>
         </li>
     </ul>
+
+    <!-- Rebel Inc. -->
     <h3><a href="https://www.ndemiccreations.com/en/51-rebel-inc" target="_blank">Rebel Inc.</a></h3>
+    <img class="screenshot" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1088790/ss_ce108858264e12cd8d172b3563eef015cc48d4ea.1920x1080.jpg?t=1766275232" alt="Rebel Inc. screenshot"/>
     <ul>
         <li><b>Role: </b>Programmer</li>
         <li><b>Platforms: </b>Android, iOS, Steam</li>
         <li><b>Where and when: </b>Ndemic Creations - Jan 21 to Dec 22 (2 years)</li>
         <li><b>Key responsibilities: </b>
         <ul>
-            <li></li>
+            <li><b>Implemented Challenge Mode</b> on mobile (then PC), a seed-based daily challenge in two difficulties which provided a random map, perks, and commanders. A leaderboard allowed players to compete and see their scores daily.</li>
+            <li><b>Built multiplayer co-op and versus into the game post-release</b> with one other developer. Lobby system, commander and map select; state synchronisation in a pseudo realtime turn-based RTS was a nunique challenge. Custom messaging and even knowing where your co-op partners mouse was hovering. Built with Photon.</li>
+            <li><b>Custom anti-cheat for multiplayer</b> using simple packet checking and seed comparison. Caught a surprising number of players.</li>
+            <li>General bug fixing and code improvement as and when needed.</li>
+        </ul>
+        </li>
+    </ul>
+
+    <!-- Raredrop -->
+    <h3><a href="https://raredropgames.com/warborn/" target="_blank">Warborn</a></h3>
+    <img class="screenshot" src="https://raredropgames.com/img/warborn/screenshot-command.png" alt="Warborn screenshot"/>
+    <ul>
+        <li><b>Role: </b>Programmer</li>
+        <li><b>Platforms: </b>Steam</li>
+        <li><b>Where and when: </b>Raredrop Games - Jul 16 - Jan 17 (7 months)</li>
+        <li><b>Key responsibilities: </b>
+        <ul>
+            <li><b>Created the initial prototype for Warborn,</b> working alongside one other developer/ company owner.</li>
+            <li><b>Built a turn-based game with hex tiles, supporting up to 4 players.</b></li>
+            <li><b>Developed a packet-based multiplayer system using Photon.</b></li>
+            <li><b>Built a map editor for prototyping maps, </b>which got bundled into the game for players to use themselves.</li>
+        </ul>
+        </li>
+    </ul>
+
+    <!-- Curveball -->
+    <h3><a href="https://store.steampowered.com/app/955260/Island_Invasion/" target="_blank">Island Invasion</a></h3>
+    <img class="screenshot" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/955260/ss_b1dccaf24c56aa180a0b14a6b3a9c031553cd321.1920x1080.jpg?t=1654258616" alt="Island Invasion screenshot"/>
+    <ul>
+        <li><b>Role: </b>Developer/ producer</li>
+        <li><b>Platforms: </b>Steam</li>
+        <li><b>Where and when: </b>Curveball Games - March 18 to Dec 18 (10 months)</li>
+        <li><b>Key responsibilities: </b>
+        <ul>
+            <li><b>Developed my own game for the Steam store.</b> Island Invasion was a tower defense game with procedurally generated maps and unlimited waves of enemies.</li>
+            <li>The player can build on land or sea, depending on building type. They must manage their cashflow with rewards from enemies as well as mining oil, which they can then purchase new towers with or upgrade existing towers.</li>
+            <li>Multiple tower types: mortar (splash damage), gun, laser (more damage the longer it's on an enemy), temporal (slows enemies down), flak (splash airborne damage), and missile (land or air homing missiles).</li>
+            <li>Towers can target first, last, strong or weak enemies, a QoL improvement that I had positive feedback on.</li>
+            <li><b>Implemented leaderboards and achievements with Steamworks.</b></li>
+            <li><b>Wrote all code, developed 3D assets, and managed release of the game to Steam.</b></li>
+            <li><b>Worked with two contractors,</b> a 2D artist and a composer, who supported on areas I'm not skilled at.</li>
+            <li>Removed from Steam as it wasn't worth keeping up due to the £100 HMRC bill every year!</li>
         </ul>
         </li>
     </ul>
@@ -63,13 +122,15 @@ layout: default
     <ul>
         <li><b>Git</b> - used in all jobs since 2014. Often called upon to solve git woes, be it clearing out refs or solving merge conflicts.</li>
         <li><b>CI/CD</b> - managed the CI/CD environment at OVO Energy (CircleCI) and at Maze Theory (Github Actions). Confident in setting up simple ecosystems to boost productivity and build capability.</li>
-        <li><b>Cloud development</b> - dabbled in GPC at OVO Energy and rolled out some microservices using TypeScript. By no means an expert but know my way around.</li>
+        <li><b>Cloud development</b> - dabbled in Google Cloud Platform and AWS at OVO Energy and rolled out some microservices using TypeScript. By no means an expert but know my way around.</li>
         <li><b>Web development</b> - you wouldn't know it from this website, but I am competent in raw JS as well as TypeScript.</li>
         <li><b>Unix</b> - I've been continuously exposed to Linux systems since I started work in 2012. I know my way around a Unix shell.</li>
     </ul>
+    
     <h2>Outside of work</h2>
     <p>I'm a keen golfer, always looking for an elusive GIR. I generally enjoy being outdoors on walks or runs. At home I relax with some crafts or a video game. I love a good board game with friends.</p>
-    <p>All time top video games:</p>
+    <p>When it comes to games I'm a Nintendo kid at heart and am a sucker for nostalgia. I also love a good sim or strategy game. I will happily enjoy a big hit like Subnautica or Hades too.</p>
+    <p>My top video games (for a bit of fun/ controversy/ small talk):</p>
     <ol reversed>
         <li>Hollow Knight</li>
         <li>Spyro: Reignited Trilogy</li>
@@ -82,6 +143,7 @@ layout: default
         <li>Command and Conquer: Red Alert 2</li>
         <li>The Legend of Zelda: A Link To The Past</li>
     </ol>
+    <img class="screenshot" src="https://www.zeldadungeon.net/Zelda03/Walkthrough/06/001.png" alt="LTTP"/>
     <p>Some favourite board games:</p>
     <ul>
         <li>Game of Thrones: The Board Game</li>
@@ -91,6 +153,7 @@ layout: default
         <li>Stardew Valley</li>
         <li>Deep Regrets</li>
     </ul>
+    <img class="screenshot" src="https://cf.geekdo-images.com/WUvpRzsNSZgq1gyvjiQcWw__imagepagezoom/img/4nZcJqdvlRQ2lXsIgP5PxblWAu4=/fit-in/1200x900/filters:no_upscale():strip_icc()/pic8156363.jpg" alt="Deep Regrets"/>
 </body>
 </html>
 
